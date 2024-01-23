@@ -7,30 +7,46 @@ import { routes } from "./routes";
 
 export default function NavMobile() {
   const [isOpen, setOpen] = useState(false);
-  const ref = useRef(null);
+  const clickRef = useRef(null);
     
   // hide dropdown upon clicking away
-  useClickAway(ref, () => setOpen(false));
+  useClickAway(clickRef, () => setOpen(false));
 
   return (
-    <div ref={ref} className="fixed top-3 left-3">
-      <Hamburger rounded toggled={isOpen} toggle={setOpen} size={20} label="Show menu" hideOutline={true} />
+    <div ref={clickRef} className="fixed top-3 left-3">
+      <Hamburger rounded toggled={isOpen} toggle={setOpen} size={25} label="Show menu" hideOutline={false} />
         {isOpen && (
-          <div className="">
-            <ul className="">
-              {
-                routes.map((route) => {
-                  return (
-                    <li key={route.title} className="">
-                      <a onClick={() => setOpen((prev) => !prev)} className="" href={route.href}>
-                        <span className="">{route.title}</span>
-                      </a>
-                    </li>
-                  );
-                })
-              }
-            </ul>
-          </div>
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <ul>
+                {
+                  routes.map((route, index) => {
+                    return (
+                      <motion.li
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                          delay: 0.1 + index / 10,
+                        }}
+                        key={route.title}>
+                        <a onClick={() => setOpen((prev) => !prev)} href={route.href}>
+                          <span>{route.title}</span>
+                        </a>
+                      </motion.li>
+                    );
+                  })
+                }
+              </ul>
+            </motion.div>
+          </AnimatePresence>
         )}
     </div>
   );
