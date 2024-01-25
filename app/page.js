@@ -1,6 +1,7 @@
 'use client'
 import Typewriter from 'typewriter-effect';
 import NavMobile from './ui/nav-mobile';
+import Contact from './ui/contact-button';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             }} 
           />
       </div>
+      <Contact />
     </main>
   )
 }
