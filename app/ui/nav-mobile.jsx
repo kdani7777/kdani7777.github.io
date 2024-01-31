@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { routes } from "./routes";
+import Link from "next/link";
 
 export default function NavMobile() {
   const [isOpen, setOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function NavMobile() {
   useClickAway(clickRef, () => setOpen(false));
 
   return (
-    <div ref={clickRef} className="fixed top-3 left-3">
+    <div ref={clickRef} className="fixed top-3 left-3 z-10">
       <Hamburger rounded toggled={isOpen} toggle={setOpen} size={25} label="Show menu" hideOutline={false} />
         {isOpen && (
           <AnimatePresence>
@@ -37,9 +38,9 @@ export default function NavMobile() {
                           delay: 0.1 + index / 10,
                         }}
                         key={route.title}>
-                        <a onClick={() => setOpen((prev) => !prev)} href={route.href}>
-                          <span>{route.title}</span>
-                        </a>
+                        <Link onClick={() => setOpen((prev) => !prev)} href={route.href}>
+                          <span className="font-medium">{route.title}</span>
+                        </Link>
                       </motion.li>
                     );
                   })
