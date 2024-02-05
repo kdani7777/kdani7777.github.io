@@ -9,6 +9,6 @@ export const routes = [
     },
     {
         title: "writing",
-        href: "/writing"
+        href: "/"
     }
 ]

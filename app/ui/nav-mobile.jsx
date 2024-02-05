@@ -6,12 +6,24 @@ import { AnimatePresence, motion } from "framer-motion";
 import { routes } from "./routes";
 import Link from "next/link";
 
-export default function NavMobile() {
+export default function NavMobile({ handleAlert, resetAlert }) {
   const [isOpen, setOpen] = useState(false);
   const clickRef = useRef(null);
     
   // hide dropdown upon clicking away
   useClickAway(clickRef, () => setOpen(false));
+
+  const handleRouteClick = (route) => {
+    setOpen(false);
+    // setOpen((prev) => !prev)
+    if (route.title === "writing") {
+      handleWritingTabClick();
+    }
+  };
+
+  const handleWritingTabClick = () => {
+    handleAlert();
+  }
 
   return (
     <div ref={clickRef} className="fixed top-3 left-3 z-10">
@@ -38,8 +50,8 @@ export default function NavMobile() {
                           delay: 0.1 + index / 10,
                         }}
                         key={route.title}>
-                        <Link onClick={() => setOpen((prev) => !prev)} href={route.href}>
-                          <span className="font-medium">{route.title}</span>
+                        <Link onClick={() => handleRouteClick(route)} href={route.href}>
+                          <span className="font-normal text-sm">{route.title}</span>
                         </Link>
                       </motion.li>
                     );
