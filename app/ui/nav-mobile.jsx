@@ -28,6 +28,7 @@ export default function NavMobile() {
     toast.info('stay tuned', {
       position: "top-center",
       autoClose: 8000,
+      toastId: 123, // prevents stacking of toasts while also not needing to add state
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
