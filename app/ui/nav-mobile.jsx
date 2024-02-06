@@ -5,7 +5,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { routes } from "./routes";
 import Link from "next/link";
-import { Bounce, Flip, toast } from "react-toastify";
+import { Flip, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function NavMobile() {
