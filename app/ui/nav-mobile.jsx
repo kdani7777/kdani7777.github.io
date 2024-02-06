@@ -5,8 +5,10 @@ import { Squash as Hamburger } from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { routes } from "./routes";
 import Link from "next/link";
+import { Bounce, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
-export default function NavMobile({ handleAlert, resetAlert }) {
+export default function NavMobile() {
   const [isOpen, setOpen] = useState(false);
   const clickRef = useRef(null);
     
@@ -22,7 +24,18 @@ export default function NavMobile({ handleAlert, resetAlert }) {
   };
 
   const handleWritingTabClick = () => {
-    handleAlert();
+    // show the toast when 'writing' tab is clicked
+    toast.info('stay tuned', {
+      position: "top-center",
+      autoClose: 8000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+      });
   }
 
   return (
