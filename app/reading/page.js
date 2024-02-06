@@ -14,7 +14,9 @@ export default function BookGrid() {
         <p className="text-center mb-4 font-semibold">(in recent memory)</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 md:p-8">
           {books.map((book) => (
-            <Book key={book.id} {...book} />
+            <a key={book.id} href={book.link}>
+              <Book {...book} />
+            </a>
           ))}
         </div>
       </div>
