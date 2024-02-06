@@ -2,8 +2,6 @@
 import Typewriter from 'typewriter-effect';
 import NavMobile from './ui/nav-mobile';
 import Contact from './ui/contact-button';
-import Alert from './ui/popup';
-import { useState } from 'react';
 import Head from 'next/head';
 import { ToastContainer } from 'react-toastify';
 
