@@ -10,5 +10,9 @@ export const routes = [
     {
         title: "writing",
         href: "#"
+    },
+    {
+        title: "running",
+        href: "/running"
     }
 ]
