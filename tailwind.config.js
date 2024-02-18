@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
-import { Montserrat } from 'next/font/google';
 
 module.exports = {
   content: [
