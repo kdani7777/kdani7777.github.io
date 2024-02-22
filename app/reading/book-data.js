@@ -34,4 +34,5 @@ export const books = [
     { id: 33, src: 'flash-boys-cover', alt: 'Flash Boys cover', title: 'Flash Boys', author: 'Michael Lewis', link: 'https://www.goodreads.com/book/show/24724602-flash-boys' },
     { id: 34, src: 'thousand-mile-summer-cover', alt: 'The Thousand-Mile Summer cover', title: 'The Thousand-Mile Summer', author: 'Colin Fletcher', link: 'https://www.goodreads.com/book/show/731249.The_Thousand_Mile_Summer' },
     { id: 35, src: 'shoe-dog-cover', alt: 'Shoe Dog cover', title: 'Shoe Dog', author: 'Phil Knight', link: 'https://www.goodreads.com/en/book/show/27220736' },
+    { id: 36, src: 'brave-new-world-cover', alt: 'Brave New World cover', title: 'Brave New World', author: 'Aldous Huxley', link: 'https://www.goodreads.com/book/show/5129.Brave_New_World' },
 ]
