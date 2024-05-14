@@ -37,5 +37,7 @@ export const books = [
     { id: 36, src: 'brave-new-world-cover', alt: 'Brave New World cover', title: 'Brave New World', author: 'Aldous Huxley', link: 'https://www.goodreads.com/book/show/5129.Brave_New_World' },
     { id: 37, src: 'once-a-runner-cover', alt: 'Once A Runner cover', title: 'Once A Runner', author: 'John L. Parker Jr', link: 'https://www.goodreads.com/book/show/98250.Once_a_Runner' },
     { id: 38, src: 'billion-dollar-whale-cover', alt: 'Billion Dollar Whale cover', title: 'Billion Dollar Whale', author: 'Tom Wright and Bradley Hope', link: 'https://www.goodreads.com/en/book/show/38743564' },
-    { id: 39, src: 'building-microservices-with-micronaut', alt: 'Building Microservices with Micronaut cover', title: 'Building Microservices with Micronaut', author: 'Nirmal Singh and Zack Dawood', link: 'https://www.amazon.com/Building-Microservices-Micronaut%C2%AE-high-performance-microservices/dp/1800564236' },
+    { id: 39, src: 'building-microservices-with-micronaut-cover', alt: 'Building Microservices with Micronaut cover', title: 'Building Microservices with Micronaut', author: 'Nirmal Singh and Zack Dawood', link: 'https://www.amazon.com/Building-Microservices-Micronaut%C2%AE-high-performance-microservices/dp/1800564236' },
+    { id: 40, src: 'some-stories-cover', alt: 'Some Stories: Lessons from the Edge of Business and Sport cover', title: 'Some Stories: Lessons From The Edge Of Business And Sport', author: 'Yvon Chouinard', link: 'https://www.goodreads.com/en/book/show/44175358' },
+    { id: 41, src: 'the-creative-act-cover', alt: 'The Creative Act: A Way of Being cover', title: 'The Creative Act: A Way of Being', author: 'Rick Rubin', link: 'https://www.goodreads.com/en/book/show/60965426' },
 ]
