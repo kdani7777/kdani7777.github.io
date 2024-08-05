@@ -40,4 +40,5 @@ export const books = [
     { id: 39, src: 'building-microservices-with-micronaut-cover', alt: 'Building Microservices with Micronaut cover', title: 'Building Microservices with Micronaut', author: 'Nirmal Singh and Zack Dawood', link: 'https://www.amazon.com/Building-Microservices-Micronaut%C2%AE-high-performance-microservices/dp/1800564236' },
     { id: 40, src: 'some-stories-cover', alt: 'Some Stories: Lessons from the Edge of Business and Sport cover', title: 'Some Stories: Lessons From The Edge Of Business And Sport', author: 'Yvon Chouinard', link: 'https://www.goodreads.com/en/book/show/44175358' },
     { id: 41, src: 'the-creative-act-cover', alt: 'The Creative Act: A Way of Being cover', title: 'The Creative Act: A Way of Being', author: 'Rick Rubin', link: 'https://www.goodreads.com/en/book/show/60965426' },
+    { id: 42, src: 'tuesdays-with-morrie-cover', alt: 'Tuesdays With Morrie cover', title: 'Tuesdays With Morrie', author: 'Mitch Albom', link: 'https://www.goodreads.com/book/show/6900.Tuesdays_with_Morrie' },
 ]
