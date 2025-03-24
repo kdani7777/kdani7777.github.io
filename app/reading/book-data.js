@@ -41,5 +41,6 @@ export const books = [
     { id: 40, src: 'some-stories-cover', alt: 'Some Stories: Lessons from the Edge of Business and Sport cover', title: 'Some Stories: Lessons From The Edge Of Business And Sport', author: 'Yvon Chouinard', link: 'https://www.goodreads.com/en/book/show/44175358' },
     { id: 41, src: 'the-creative-act-cover', alt: 'The Creative Act: A Way of Being cover', title: 'The Creative Act: A Way of Being', author: 'Rick Rubin', link: 'https://www.goodreads.com/en/book/show/60965426' },
     { id: 42, src: 'tuesdays-with-morrie-cover', alt: 'Tuesdays With Morrie cover', title: 'Tuesdays With Morrie', author: 'Mitch Albom', link: 'https://www.goodreads.com/book/show/6900.Tuesdays_with_Morrie' },
-    { id: 43, src: 'on-writing-cover', alt: 'On Writing cover', title: 'On Writing', author: 'Stephen King', link: 'https://www.goodreads.com/book/show/10569.On_Writing' },
+    { id: 43, src: 'the-good-life-cover', alt: 'The Good Life cover', title: 'The Good Life', author: 'Robert Waldinger and Marc Schulz', link: 'https://www.goodreads.com/book/show/61272271-the-good-life' },
+    { id: 44, src: 'on-writing-cover', alt: 'On Writing cover', title: 'On Writing', author: 'Stephen King', link: 'https://www.goodreads.com/book/show/10569.On_Writing' },
 ]
