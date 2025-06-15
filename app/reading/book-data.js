@@ -44,4 +44,5 @@ export const books = [
     { id: 43, src: 'the-good-life-cover', alt: 'The Good Life cover', title: 'The Good Life', author: 'Robert Waldinger and Marc Schulz', link: 'https://www.goodreads.com/book/show/61272271-the-good-life' },
     { id: 44, src: 'on-writing-cover', alt: 'On Writing cover', title: 'On Writing', author: 'Stephen King', link: 'https://www.goodreads.com/book/show/10569.On_Writing' },
     { id: 45, src: 'the-man-who-solved-the-market-cover', alt: 'The Man Who Solved the Market cover', title: 'The Man Who Solved the Market', author: 'Gregory Zuckerman', link: 'https://www.goodreads.com/book/show/43889703-the-man-who-solved-the-market' },
+    { id: 46, src: 'life-lived-wild-cover', alt: 'Life Lived Wild cover', title: 'Life Lived Wild', author: 'Rick Ridgeway', link: 'https://www.goodreads.com/book/show/59351322-life-lived-wild' },
 ]
