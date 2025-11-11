@@ -46,4 +46,5 @@ export const books = [
     { id: 45, src: 'the-man-who-solved-the-market-cover', alt: 'The Man Who Solved the Market cover', title: 'The Man Who Solved the Market', author: 'Gregory Zuckerman', link: 'https://www.goodreads.com/book/show/43889703-the-man-who-solved-the-market' },
     { id: 46, src: 'life-lived-wild-cover', alt: 'Life Lived Wild cover', title: 'Life Lived Wild', author: 'Rick Ridgeway', link: 'https://www.goodreads.com/book/show/59351322-life-lived-wild' },
     { id: 47, src: 'chaos-cover', alt: 'Chaos cover', title: 'Chaos', author: 'Tom O\'Neill', link: 'https://www.goodreads.com/book/show/43015073-chaos' },
+    { id: 48, src: 'the-grid-cover', alt: 'The Grid cover', title: 'The Grid', author: 'Gretchen Bakke Ph.D.', link: 'https://www.goodreads.com/book/show/26073005-the-grid' },
 ]
