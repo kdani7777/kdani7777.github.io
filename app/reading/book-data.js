@@ -47,4 +47,5 @@ export const books = [
     { id: 46, src: 'life-lived-wild-cover', alt: 'Life Lived Wild cover', title: 'Life Lived Wild', author: 'Rick Ridgeway', link: 'https://www.goodreads.com/book/show/59351322-life-lived-wild' },
     { id: 47, src: 'chaos-cover', alt: 'Chaos cover', title: 'Chaos', author: 'Tom O\'Neill', link: 'https://www.goodreads.com/book/show/43015073-chaos' },
     { id: 48, src: 'the-grid-cover', alt: 'The Grid cover', title: 'The Grid', author: 'Gretchen Bakke Ph.D.', link: 'https://www.goodreads.com/book/show/26073005-the-grid' },
+    { id: 49, src: 'tortilla-flat-cover', alt: 'Tortilla Flat cover', title: 'Tortilla Flat', author: 'John Steinbeck', link: 'https://www.goodreads.com/book/show/163977.Tortilla_Flat' },
 ]
